@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react';
 import {getUsersList} from '../../services/UserList';
 import Typography from '../../components/Typography';
 import UserCard from '../../components/UserCard';
+import { Colors } from '../../constants/Colors';
 
 const UsersList = () => {
   const [list, setList] = useState([]);
@@ -87,5 +88,6 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 20,
     paddingVertical: 10,
+    backgroundColor:Colors?.white
   },
 })
